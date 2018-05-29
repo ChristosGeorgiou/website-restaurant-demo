@@ -2,7 +2,7 @@
   "menu": [{
     "name": "Σαλάτες",
     "icon": "carrot",
-    "color": "#4CAF50",
+    "color": "#8BC34A",
     "items": [{
       "label": "Χωριάτικη",
       "description": "Ελληνική παραδοσιακή σαλάτσ",

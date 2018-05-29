@@ -1,14 +1,17 @@
 {{>_start}}
-<nav class="bg-dark sticky-top p-4 text-white m-0 text-center">
-  <div class="glyph">
-    <span class="glyph-icon flaticon-cooker"></span>
+<nav class="header-bar text-center flex-column">
+  <div>
+    <div class="glyph">
+      <span class="glyph-icon flaticon-cooker"></span>
+    </div>
   </div>
-  <h2 style="font-weight:300">Restaurants</h2>
+  <h2>Restaurants</h2>
+  <small>balnc software</small>
 </nav>
 
-<div class="list-group list-group-flush menu">
+<div class="list-menu">
   {{#each menu}}
-  <a href="{{link}}" class="list-group-item list-group-item-action d-flex align-items-center">
+  <a href="{{link}}" class="list-group-item">
     <div class="glyph">
       <span class="glyph-icon flaticon-{{icon}}" style="color:{{color}}"></span>
     </div>
@@ -17,7 +20,7 @@
       <div class="description">{{description}}</div>
     </div>
     {{#if hasInfo}}
-    <div class="badge badge-secondary ml-auto">{{info}}</div>
+    <div class="status bg-dark">{{info}}</div>
     {{/if}}
   </a>
   {{/each}}

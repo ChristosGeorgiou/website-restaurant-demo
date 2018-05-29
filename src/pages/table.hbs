@@ -1,17 +1,17 @@
 {{>_start}}
-<nav class="bg-dark sticky-top p-2 d-flex">
+<nav class="header-bar">
   <a href="tables.html" class="btn btn-link btn-sm mr-2 text-white">
     <span class="fa fa-chevron-left"></span>
   </a>
-  <h4 class="text-white m-0" style="font-weight:300">Τραπέζι: {{table}}</h4>
+  <h4>Τραπέζι: {{table}}</h4>
 </nav>
-<div class="list-group list-group-flush">
+<div class="list-menu">
   {{#each items}}
-  <div class="list-group-item list-group-item-action d-flex align-items-center">
+  <div class="list-group-item">
     <div class="rounded text-center text-monospace text-white mr-2 px-2" style="background:{{color}};font-size:1rem;">
       <span class="{{status}}"></span>
     </div>
-    <h4 class="m-0">{{label}}</h4>
+    <div>{{label}}</div>
     <span class="text-muted ml-auto">{{price}}&euro;</span>
   </div>
   {{/each}}
@@ -19,29 +19,29 @@
     <div class="glyph">
       <span class="glyph-icon flaticon-wallet"></span>
     </div>
-    <h4 class="m-0" style="font-weight:300">Σύνολα</h4>
+    <h4>Σύνολα</h4>
   </div>
-  <div class="list-group-item list-group-item-action d-flex align-items-center">
-    <h4 class="m-0">Σύνολο</h4>
-    <h4 class="ml-auto" style="font-weight:300">{{bill.total}}&euro;</h4>
+  <div class="list-group-item">
+    <div>Σύνολο</div>
+    <h4 class="ml-auto">{{bill.total}}&euro;</h4>
   </div>
-  <div class="list-group-item list-group-item-action d-flex align-items-center">
-    <h4 class="m-0">Κεράσματα</h4>
-    <h4 class="ml-auto" style="font-weight:300">{{bill.treat}}&euro;</h4>
+  <div class="list-group-item">
+    <div>Κεράσματα</div>
+    <h4 class="ml-auto">{{bill.treat}}&euro;</h4>
   </div>
-  <div class="list-group-item list-group-item-action d-flex align-items-center">
-    <h4 class="m-0">Πουρμπουάρ</h4>
-    <h4 class="ml-auto" style="font-weight:300">{{bill.total}}&euro;</h4>
+  <div class="list-group-item">
+    <div>Πουρμπουάρ</div>
+    <h4 class="ml-auto">{{bill.tip}}&euro;</h4>
   </div>
-  <div class="list-group-item list-group-item-action d-flex align-items-center">
-    <h4 class="m-0">Είσπράξεις</h4>
-    <h4 class="ml-auto" style="font-weight:300">{{bill.receivedFinal}}&euro;</h4>
+  <div class="list-group-item">
+    <div>Είσπράξεις</div>
+    <h4 class="ml-auto">{{bill.receivedFinal}}&euro;</h4>
   </div>
 </div>
 <div class="bg-white border-top fixed-bottom p-1 d-flex">
   <a href="order-payment.html" class="w-50 m-1 btn btn-lg btn-outline-secondary">
     <span class="fa fa-credit-card"></span> Πληρωμή</a>
   <a href="order-new.html" class="w-50 m-1 btn btn-lg btn-success">
-    <span class="fa fa-check-circle"></span> Παραγγελία</a>
+    <span class="fa fa-plus-circle"></span> Παραγγελία</a>
 </div>
 {{>_end}}
