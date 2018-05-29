@@ -1,0 +1,60 @@
+{
+    "id": "146822146",
+    "table": "#06",
+    "status": "ΚΥΡΙΩΣ",
+    "color": "#FF5722",
+    "waiter": "Chris",
+    "items": [{
+        "label": "Φιλέτο Μοσχάρι",
+        "price": "10,00",
+        "status": "fa fa-clock-o",
+        "color": "#FF5722"
+    }, {
+        "label": "Φιλέτο Μοσχάρι",
+        "price": "10,00",
+        "status": "fa fa-clock-o",
+        "color": "#FF5722"
+    }, {
+        "label": "Χωριάτικη",
+        "price": "6,50",
+        "status": "fa fa-check-circle-o",
+        "color": "#4CAF50"
+    }, {
+        "label": "Χωριάτικο Λουκάνικο",
+        "price": "6,50",
+        "status": "fa fa-check-circle-o",
+        "color": "#4CAF50"
+    }, {
+        "label": "Λαχανικά Σχάρας",
+        "price": "5,50",
+        "status": "fa fa-check-circle-o",
+        "color": "#4CAF50"
+    }, {
+        "label": "Κρασοτύρι",
+        "price": "6,50",
+        "status": "fa fa-check-circle-o",
+        "color": "#4CAF50"
+    }, {
+        "label": "Κεφτεδάκια",
+        "price": "0,00",
+        "status": "fa fa-check-circle-o",
+        "color": "#4CAF50"
+    }, {
+        "label": "Ριζότο",
+        "price": "10,00",
+        "status": "fa fa-check-circle-o",
+        "color": "#4CAF50"
+    }, {
+        "label": "Πέννες Gluten Free",
+        "price": "10,00",
+        "status": "fa fa-check-circle-o",
+        "color": "#4CAF50"
+    }],
+    "bill": {
+        "total": "65,00",
+        "treat": "5,00",
+        "tip": "20,00",
+        "received": "100,00",
+        "changes": "15,00"
+    }
+}

@@ -1,0 +1,25 @@
+{{>_start}}
+<nav class="bg-dark sticky-top p-2 d-flex">
+  <a href="tables.html" class="btn btn-link btn-sm mr-2 text-white">
+    <span class="fa fa-chevron-left"></span>
+  </a>
+  <h4 class="text-white m-0" style="font-weight:300">Τραπέζι: {{table}}</h4>
+</nav>
+<div class="list-group list-group-flush">
+  {{#each items}}
+  <div class="list-group-item list-group-item-action d-flex align-items-center">
+    <div class="rounded text-center text-monospace text-white mr-2 px-2" style="background:{{color}};font-size:1rem;">
+      <span class="{{status}}"></span>
+    </div>
+    <h4 class="m-0">{{label}}</h4>
+    <span class="text-muted ml-auto">{{price}}&euro;</span>
+  </div>
+  {{/each}}
+</div>
+<div class="bg-white border-top fixed-bottom p-1 d-flex">
+  <a href="order-bill.html" class="w-50 m-1 btn btn-outline-secondary">
+    <span class="fa fa-credit-card"></span> Λογαριασμός</a>
+  <a href="order-new.html" class="w-50 m-1 btn btn-success">
+    <span class="fa fa-check-circle"></span> Παραγγελία</a>
+</div>
+{{>_end}}

@@ -1,0 +1,14 @@
+{
+  "name": "website-cgeosoft",
+  "version": "0.0.0",
+  "description": "cgeosoft.com",
+  "author": {
+    "name": "Christos Georgiou",
+    "email": "georgiou.christos@outlook.com",
+    "url": "http://cgeosoft.com"
+  },
+  "dependencies": {
+    "gulp-cg-toolkit": "2.1.1",
+    "bootstrap": "^4.1.1"
+  }
+}

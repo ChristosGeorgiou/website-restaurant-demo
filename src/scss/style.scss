@@ -1,0 +1,24 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+.glyph {
+    display: inline-block;
+    margin: 0 0.8em 0 0;
+    text-align: center;
+    width: 50px;
+    .glyph-icon {
+        line-height: 1;
+        &:before {
+            font-size: 50px;
+            margin-left: 0;
+        }
+    }
+}
+
+.menu {
+    h4 {
+        @extend .mb-0; // font-weight: 300;
+    }
+    .description {
+        @extend .text-secondary;
+        font-size: 1rem;
+    }
+}

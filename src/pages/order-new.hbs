@@ -1,0 +1,36 @@
+{{>_start}}
+<nav class="sticky-top bg-dark p-2 d-flex" style="height:50px;">
+    <a href="table.html" class="btn btn-link btn-sm mr-2 text-white">
+        <span class="fa fa-chevron-left"></span>
+    </a>
+    <h4 class="text-white m-0" style="font-weight:300">#15 - Παραγγελία</h4>
+</nav>
+<div class="list-group list-group-flush menu pb-5">
+    {{#each menu}}
+    <div class="sticky-top list-group-item d-flex align-items-center text-white" style="background: {{color}}">
+        <div class="glyph">
+            <span class="glyph-icon flaticon-{{icon}}"></span>
+        </div>
+        <h4>{{name}}</h4>
+    </div> {{#each items}}
+    <div class="list-group-item d-flex justify-content-startalign-items-center">
+        <div>
+            <h4>{{label}}</h4>
+            <div class="description text-nowrap text-truncate" style="max-width: 260px">
+                <strong>{{price}}</strong> - {{description}}</div>
+        </div>
+        <button class="btn btn-outline-success btn-lg ml-auto" style="width:51px;">
+            {{#if hasAmount}} {{amount}} {{else}}
+            <span class="fa fa-plus-circle"></span>
+            {{/if}}
+        </button>
+    </div>
+    {{/each}} {{/each}}
+</div>
+<div class="bg-white border-top fixed-bottom p-1 d-flex">
+    <a href="order-settings.html" class="w-50 m-1 btn btn-outline-secondary">
+        <span class="fa fa-bars"></span> Επιλογές</a>
+    <a href="order-complete.html" class="w-50 m-1 btn btn-success">
+        <span class="fa fa-check-circle"></span> Καταχώρηση</a>
+</div>
+{{>_end}}

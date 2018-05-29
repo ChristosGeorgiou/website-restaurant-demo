@@ -1,0 +1,28 @@
+{{>_start}}
+<nav class="bg-dark sticky-top p-4 text-white m-0 text-center">
+  <div class="glyph">
+    <span class="glyph-icon flaticon-cooker"></span>
+  </div>
+  <h2 style="font-weight:300">Restaurants</h2>
+</nav>
+
+<div class="list-group list-group-flush menu">
+  {{#each menu}}
+  <a href="{{link}}" class="list-group-item list-group-item-action d-flex align-items-center">
+    <div class="glyph">
+      <span class="glyph-icon flaticon-{{icon}}" style="color:{{color}}"></span>
+    </div>
+    <div>
+      <h4>{{label}}</h4>
+      <div class="description">{{description}}</div>
+    </div>
+    {{#if hasInfo}}
+    <div class="badge badge-secondary ml-auto">{{info}}</div>
+    {{/if}}
+  </a>
+  {{/each}}
+</div>
+<div class="bg-white fixed-bottom p-1 text-secondary text-center border-top">
+  <small> Balnc Restaurants v1.0</small>
+</div>
+{{>_end}}
