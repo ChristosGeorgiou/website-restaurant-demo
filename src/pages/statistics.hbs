@@ -8,8 +8,38 @@
 <div class="p-2">
   <canvas id="canvas"></canvas>
 </div>
-<script src="http://www.chartjs.org/dist/2.7.2/Chart.bundle.js"></script>
-<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+<div class="list-menu">
+  <div class="list-group-item">
+    <h4>Δευτέρα</h4>
+    <div class="status bg-dark">15</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Τρίτη</h4>
+    <div class="status bg-dark">25</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Τετάρτη</h4>
+    <div class="status bg-dark">7</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Πέμπτη</h4>
+    <div class="status bg-dark">30</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Παρασκευή</h4>
+    <div class="status bg-dark">15</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Σάββατο</h4>
+    <div class="status bg-dark">80</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Κυριακή</h4>
+    <div class="status bg-dark">70</div>
+  </div>
+</div>
+
+<script src="/js/Chart.bundle.js"></script>
 <script>
   var config = {
     type: 'line',
@@ -68,36 +98,5 @@
     var ctx = document.getElementById('canvas').getContext('2d');
     window.myLine = new Chart(ctx, config);
   };
-
-  document.getElementById('randomizeData').addEventListener('click', function () {
-    config.data.datasets.forEach(function (dataset) {
-      dataset.data = dataset.data.map(function () {
-        return randomScalingFactor();
-      });
-
-    });
-
-    window.myLine.update();
-  });
-
-  var colorNames = Object.keys(window.chartColors);
-  document.getElementById('addDataset').addEventListener('click', function () {
-    var colorName = colorNames[config.data.datasets.length % colorNames.length];
-    var newColor = window.chartColors[colorName];
-    var newDataset = {
-      label: 'Dataset ' + config.data.datasets.length,
-      backgroundColor: newColor,
-      borderColor: newColor,
-      data: [],
-      fill: false
-    };
-
-    for (var index = 0; index < config.data.labels.length; ++index) {
-      newDataset.data.push(randomScalingFactor());
-    }
-
-    config.data.datasets.push(newDataset);
-    window.myLine.update();
-  });
 
 </script> {{>_end}}
