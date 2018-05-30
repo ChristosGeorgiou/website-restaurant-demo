@@ -1,34 +1,35 @@
 {{>_start}}
 <nav class="header-bar">
-    <a href="table.html" class="btn btn-link btn-sm mr-2 text-white">
-        <span class="fa fa-chevron-left"></span>
-    </a>
-    <h4>#06 - Παραγγελία</h4>
+  <a href="table.html" class="btn btn-link btn-sm mr-2 text-white">
+    <span class="fa fa-chevron-left"></span>
+  </a>
+  <div class="header">
+    <h4>Τραπέζι #06</h4>
+    <h5>Παραγγελία</h5>
+  </div>
 </nav>
 <div class="list-menu">
-    {{#each menu}}
-    <div class="sticky-top list-group-item text-white" style="background: {{color}}">
-        <div class="glyph">
-            <span class="glyph-icon flaticon-{{icon}}"></span>
-        </div>
-        <h4>{{name}}</h4>
-    </div> {{#each items}}
-    <div class="list-group-item">
-        <div>
-            <h4>{{label}}</h4>
-            <div class="description text-nowrap text-truncate" style="max-width: 260px">
-                <strong>{{price}}</strong> - {{description}}</div>
-        </div>
-        <button class="btn btn-outline-success btn-lg ml-auto rounded-circle" style="width:51px;">
-            {{#if hasAmount}} {{amount}} {{else}}
-            <span class="fa fa-plus"></span>
-            {{/if}}
-        </button>
+  {{#each menu}}
+  <div class="sticky-top list-group-item text-white" style="background: {{color}}">
+    <span class="icon {{icon}}"></span>
+    <h4>{{name}}</h4>
+  </div> {{#each items}}
+  <div class="list-group-item">
+    <div>
+      <h4>{{label}}</h4>
+      <div class="description text-nowrap text-truncate" style="max-width: 260px">
+        <strong>{{price}}&euro;</strong> - {{description}}</div>
     </div>
-    {{/each}} {{/each}}
+    <button class="btn btn-outline-success btn-lg ml-auto rounded-circle" style="width:51px;">
+      {{#if hasAmount}} {{amount}} {{else}}
+      <span class="fa fa-plus"></span>
+      {{/if}}
+    </button>
+  </div>
+  {{/each}} {{/each}}
 </div>
 <div class="bg-white border-top fixed-bottom p-1 d-flex">
-    <a href="order-complete.html" class="w-100 m-1 btn btn-lg btn-success">
-        <span class="fa fa-check-circle"></span> Προσθήκη</a>
+  <a href="order-complete.html" class="w-100 m-1 btn btn-lg btn-success">
+    <span class="fa fa-check-circle"></span> Προσθήκη</a>
 </div>
 {{>_end}}

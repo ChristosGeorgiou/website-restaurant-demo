@@ -1,0 +1,349 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 21/05/2018 12:19
+  	*/
+
+	@font-face {
+	  font-family: "FlaticonSummer";
+	  src: url("./Flaticon.eot");
+	  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"), url("./Flaticon.woff") format("woff"), url("./Flaticon.ttf") format("truetype"), url("./Flaticon.svg#Flaticon") format("svg");
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	  @font-face {
+	    font-family: "FlaticonSummer";
+	    src: url("./Flaticon.svg#Flaticon") format("svg");
+	  }
+	}
+
+	[class^="fi-summer"]:before,
+	[class*=" fi-summer"]:before,
+	[class^="fi-summer"]:after,
+	[class*=" fi-summer"]:after {
+	  font-family: FlaticonSummer;
+	  font-size: 20px;
+	  font-style: normal;
+	  margin-left: 20px;
+	}
+
+	.flaticon-001-skewer:before {
+	  content: "\f100";
+	}
+
+	.flaticon-002-butterfly:before {
+	  content: "\f101";
+	}
+
+	.flaticon-003-cap:before {
+	  content: "\f102";
+	}
+
+	.flaticon-004-cauldron:before {
+	  content: "\f103";
+	}
+
+	.flaticon-005-scooter-1:before {
+	  content: "\f104";
+	}
+
+	.flaticon-006-mattress:before {
+	  content: "\f105";
+	}
+
+	.flaticon-007-bike:before {
+	  content: "\f106";
+	}
+
+	.flaticon-008-shower:before {
+	  content: "\f107";
+	}
+
+	.flaticon-009-shell:before {
+	  content: "\f108";
+	}
+
+	.flaticon-010-fan:before {
+	  content: "\f109";
+	}
+
+	.flaticon-011-axe:before {
+	  content: "\f10a";
+	}
+
+	.flaticon-012-bonfire:before {
+	  content: "\f10b";
+	}
+
+	.flaticon-013-skate:before {
+	  content: "\f10c";
+	}
+
+	.flaticon-014-water:before {
+	  content: "\f10d";
+	}
+
+	.flaticon-015-thermometer:before {
+	  content: "\f10e";
+	}
+
+	.flaticon-016-pinwheel:before {
+	  content: "\f10f";
+	}
+
+	.flaticon-017-fins:before {
+	  content: "\f110";
+	}
+
+	.flaticon-018-scooter:before {
+	  content: "\f111";
+	}
+
+	.flaticon-019-cruise:before {
+	  content: "\f112";
+	}
+
+	.flaticon-020-calendar:before {
+	  content: "\f113";
+	}
+
+	.flaticon-021-swimsuit:before {
+	  content: "\f114";
+	}
+
+	.flaticon-022-bird:before {
+	  content: "\f115";
+	}
+
+	.flaticon-023-flower:before {
+	  content: "\f116";
+	}
+
+	.flaticon-024-beer:before {
+	  content: "\f117";
+	}
+
+	.flaticon-025-compass:before {
+	  content: "\f118";
+	}
+
+	.flaticon-026-leaning-tower-of-pisa:before {
+	  content: "\f119";
+	}
+
+	.flaticon-027-airplane:before {
+	  content: "\f11a";
+	}
+
+	.flaticon-028-umbrella:before {
+	  content: "\f11b";
+	}
+
+	.flaticon-029-table:before {
+	  content: "\f11c";
+	}
+
+	.flaticon-030-bottle:before {
+	  content: "\f11d";
+	}
+
+	.flaticon-031-slippers:before {
+	  content: "\f11e";
+	}
+
+	.flaticon-032-bungalow:before {
+	  content: "\f11f";
+	}
+
+	.flaticon-033-soda:before {
+	  content: "\f120";
+	}
+
+	.flaticon-034-guitar:before {
+	  content: "\f121";
+	}
+
+	.flaticon-035-lifebuoy:before {
+	  content: "\f122";
+	}
+
+	.flaticon-036-bus:before {
+	  content: "\f123";
+	}
+
+	.flaticon-037-women-hat:before {
+	  content: "\f124";
+	}
+
+	.flaticon-038-sun:before {
+	  content: "\f125";
+	}
+
+	.flaticon-039-water-gun:before {
+	  content: "\f126";
+	}
+
+	.flaticon-040-running-shoes:before {
+	  content: "\f127";
+	}
+
+	.flaticon-041-sand-castle:before {
+	  content: "\f128";
+	}
+
+	.flaticon-042-backpack:before {
+	  content: "\f129";
+	}
+
+	.flaticon-043-hotel:before {
+	  content: "\f12a";
+	}
+
+	.flaticon-044-palm-tree:before {
+	  content: "\f12b";
+	}
+
+	.flaticon-045-tshirt:before {
+	  content: "\f12c";
+	}
+
+	.flaticon-046-camera:before {
+	  content: "\f12d";
+	}
+
+	.flaticon-047-grill:before {
+	  content: "\f12e";
+	}
+
+	.flaticon-048-float:before {
+	  content: "\f12f";
+	}
+
+	.flaticon-049-bench:before {
+	  content: "\f130";
+	}
+
+	.flaticon-050-ticket:before {
+	  content: "\f131";
+	}
+
+	.flaticon-051-cocktail:before {
+	  content: "\f132";
+	}
+
+	.flaticon-052-hot-air-balloon:before {
+	  content: "\f133";
+	}
+
+	.flaticon-053-diving-mask:before {
+	  content: "\f134";
+	}
+
+	.flaticon-054-map:before {
+	  content: "\f135";
+	}
+
+	.flaticon-055-frisbee:before {
+	  content: "\f136";
+	}
+
+	.flaticon-056-passport:before {
+	  content: "\f137";
+	}
+
+	.flaticon-057-mountain:before {
+	  content: "\f138";
+	}
+
+	.flaticon-058-beach-ball:before {
+	  content: "\f139";
+	}
+
+	.flaticon-059-boat:before {
+	  content: "\f13a";
+	}
+
+	.flaticon-060-volleyball:before {
+	  content: "\f13b";
+	}
+
+	.flaticon-061-trailer:before {
+	  content: "\f13c";
+	}
+
+	.flaticon-062-glass:before {
+	  content: "\f13d";
+	}
+
+	.flaticon-063-duck:before {
+	  content: "\f13e";
+	}
+
+	.flaticon-064-swimming-pool:before {
+	  content: "\f13f";
+	}
+
+	.flaticon-065-shorts:before {
+	  content: "\f140";
+	}
+
+	.flaticon-066-oxygen:before {
+	  content: "\f141";
+	}
+
+	.flaticon-067-tent:before {
+	  content: "\f142";
+	}
+
+	.flaticon-068-kayak:before {
+	  content: "\f143";
+	}
+
+	.flaticon-069-kite:before {
+	  content: "\f144";
+	}
+
+	.flaticon-070-ice-cream-1:before {
+	  content: "\f145";
+	}
+
+	.flaticon-071-suitcase:before {
+	  content: "\f146";
+	}
+
+	.flaticon-072-watermelon:before {
+	  content: "\f147";
+	}
+
+	.flaticon-073-coconut:before {
+	  content: "\f148";
+	}
+
+	.flaticon-074-sand:before {
+	  content: "\f149";
+	}
+
+	.flaticon-075-ice-cream:before {
+	  content: "\f14a";
+	}
+
+	.flaticon-076-sunbed:before {
+	  content: "\f14b";
+	}
+
+	.flaticon-077-sunblock:before {
+	  content: "\f14c";
+	}
+
+	.flaticon-078-surfboard:before {
+	  content: "\f14d";
+	}
+
+	.flaticon-079-beach-bag:before {
+	  content: "\f14e";
+	}
+
+	.flaticon-080-sunglasses:before {
+	  content: "\f14f";
+	}

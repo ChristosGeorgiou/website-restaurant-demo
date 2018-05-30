@@ -1,7 +1,7 @@
 {
   "menu": [{
     "name": "Σαλάτες",
-    "icon": "carrot",
+    "icon": "fi-restaurant flaticon-carrot",
     "color": "#8BC34A",
     "items": [{
       "label": "Χωριάτικη",
@@ -28,7 +28,7 @@
     }]
   }, {
     "name": "Ορεκτικά",
-    "icon": "brochette",
+    "icon": "fi-restaurant flaticon-brochette",
     "color": "#FF9800",
     "items": [{
       "label": "Χωριάτικο Λουκάνικο",
@@ -65,7 +65,7 @@
     }]
   }, {
     "name": "Κυρίως Πιάτο",
-    "icon": "steak",
+    "icon": "fi-restaurant flaticon-steak",
     "color": "#795548",
     "items": [{
       "label": "Ριζότο",

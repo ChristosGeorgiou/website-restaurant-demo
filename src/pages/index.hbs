@@ -1,9 +1,7 @@
 {{>_start}}
 <nav class="header-bar text-center flex-column">
   <div>
-    <div class="glyph">
-      <span class="glyph-icon flaticon-cooker"></span>
-    </div>
+    <span class="icon fi-restaurant flaticon-cooker"></span>
   </div>
   <h2>Restaurants</h2>
   <small>balnc software</small>
@@ -12,9 +10,7 @@
 <div class="list-menu">
   {{#each menu}}
   <a href="{{link}}" class="list-group-item">
-    <div class="glyph">
-      <span class="glyph-icon flaticon-{{icon}}" style="color:{{color}}"></span>
-    </div>
+    <span class="icon {{icon}}" style="color:{{color}}"></span>
     <div>
       <h4>{{label}}</h4>
       <div class="description">{{description}}</div>

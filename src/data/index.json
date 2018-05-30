@@ -1,8 +1,8 @@
 {
   "menu": [{
     "link": "tables.html",
-    "color": "#3F51B5",
-    "icon": "dish",
+    "color": "#343a40",
+    "icon": "fi-restaurant flaticon-dish",
     "label": "Τραπέζια",
     "description": "Menu / Παραγγελίες",
     "hasInfo": true,
@@ -10,7 +10,7 @@
   }, {
     "link": "reservations.html",
     "color": "#E91E63",
-    "icon": "reserved",
+    "icon": "fi-restaurant flaticon-reserved",
     "label": "Κρατήσεις",
     "description": "Αγαπητοί πελάτες!",
     "hasInfo": true,
@@ -18,14 +18,14 @@
   }, {
     "link": "statistics.html",
     "color": "#4CAF50",
-    "icon": "fruit",
+    "icon": "fi-restaurant flaticon-fruit",
     "label": "Στατιστικά",
     "description": "Αναλύσεις / Γραφήματα",
     "hasInfo": false
   }, {
     "link": "settings.html",
     "color": "#607D8B",
-    "icon": "daily-specials-board",
+    "icon": "fi-restaurant flaticon-daily-specials-board",
     "label": "Ρυθμίσεις",
     "description": "Αναβάθμιση / Βοήθεια",
     "hasInfo": false
