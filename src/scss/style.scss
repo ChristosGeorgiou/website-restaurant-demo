@@ -93,4 +93,49 @@
         @extend .text-secondary;
         font-size: 1rem;
     }
+    .list-group-wrap {
+        @extend .d-flex;
+        @extend .flex-wrap;
+        @extend .justify-content-center;
+        @extend .p-1;
+        .list-group-item {
+            @extend .border;
+            @extend .m-1;
+            @extend .p-2;
+            @extend .flex-column;
+            width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            h4 {
+                @extend .mb-2;
+                @extend .text-truncate;
+            }
+            .status {
+                @extend .w-100;
+                @extend .p-1;
+            }
+        }
+    }
+}
+
+.sidemenu {
+    @extend .bg-dark;
+    @extend .h-100;
+    a {
+        @extend .btn;
+        @extend .btn-link;
+        @extend .btn-block;
+        @extend .text-white;
+        @extend .m-0;
+        @extend .p-0;
+        border-radius: 0;
+        border: none;
+        line-height: 60px;
+        span {
+            &:before {
+                font-size: 25px;
+                margin-left: 0;
+            }
+        }
+    }
 }

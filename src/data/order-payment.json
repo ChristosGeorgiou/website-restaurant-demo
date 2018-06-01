@@ -1,37 +1,32 @@
 {
     "id": "146822146",
     "table": "#06",
-    "status": "ΚΥΡΙΩΣ",
-    "color": "#FF5722",
-    "waiter": "Chris",
+    "total": "65,00",
+    "treat": "5,00",
+    "tip": "20,00",
+    "received": "100,00",
+    "changes": "5,00",
     "items": [{
         "label": "Freddo Espresso",
         "price": "3,50",
-        "isServed": true
+        "isPaid": true
     }, {
         "label": "Freddo Espresso",
         "price": "3,50",
-        "isServed": true
+        "isPaid": true
     }, {
         "label": "Φυσ. Χυμός Πορτοκάλι",
         "price": "3,00",
-        "isServed": true
+        "isSelected": true
+    }, {
+        "label": "Club Sandwich",
+        "price": "6,00",
+        "isSelected": true
     }, {
         "label": "Club Sandwich",
         "price": "6,00"
     }, {
         "label": "Club Sandwich",
         "price": "6,00"
-    }, {
-        "label": "Club Sandwich",
-        "price": "6,00"
-    }],
-    "bill": {
-        "total": "65,00",
-        "treat": "5,00",
-        "tip": "20,00",
-        "received": "100,00",
-        "receivedFinal": "85,00",
-        "changes": "15,00"
-    }
+    }]
 }

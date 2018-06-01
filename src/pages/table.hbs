@@ -7,7 +7,7 @@
     <h4>Τραπέζι #06</h4>
     <h5>Επισκόπιση</h5>
   </div>
-  <a href="table-settings.html" class="ml-auto mr-2 btn btn-lg btn-outline-light">
+  <a href="table-settings.html" class="ml-auto mr-2 btn btn-lg btn-link text-light">
     <span class="fa fa-bars"></span>
   </a>
 </nav>
@@ -15,52 +15,47 @@
   <div class="list-group-item d-flex align-items-center bg-light">
     <span class="icon fi-restaurant flaticon-waiter"></span>
     <h4>Παραγγελίες</h4>
-    <a href="order-new.html" class="ml-auto btn btn-lg btn-success">
-      <span class="fa fa-plus-circle"></span>
-    </a>
   </div>
   {{#each items}}
   <div class="list-group-item">
-    <div class="rounded text-center text-monospace text-white mr-2 px-2" style="background:{{color}};font-size:1rem;">
-      <span class="{{status}}"></span>
+    <div>
+      <span>{{label}} - </span>
+      <strong class="text-monospace">{{price}}&euro;</strong>
     </div>
-    <div>{{label}}</div>
-    <h4 class="ml-auto">{{price}}&euro;</h4>
+    {{#if isServed}}
+    <div class="badge badge-dark p-2 ml-auto">ΠΑΡΑΔ.</div>
+    {{/if}}
   </div>
   {{/each}}
+  <div class="list-group-item">
+    <a href="order-new.html" class="btn btn-block btn-lg btn-success">
+      <span class="fa fa-plus-circle"></span> Νέα Παραγγελία
+    </a>
+  </div>
   <div class="list-group-item d-flex align-items-center bg-light">
     <span class="icon fi-restaurant flaticon-wallet"></span>
-    <h4>Σύνολα</h4>
-    <a href="order-payment.html" class="ml-auto btn btn-lg btn-success">
-      <span class="fa fa-credit-card"></span>
+    <h4>Πληρωμές</h4>
+  </div>
+  <div class="list-group-item">
+    <dl class="row w-75 mx-auto mb-0">
+      <dt class="col-4 text-right">Σύνολο:</dt>
+      <dd class="col-8 text-monospace text-right">28,00&euro;</dd>
+      <dt class="col-4 text-right">Πληρωμένο:</dt>
+      <dd class="col-8 text-monospace text-right">7,00&euro;</dd>
+      <dt class="col-4 text-right">Πουρμπουάρ:</dt>
+      <dd class="col-8 text-monospace text-right">3,00&euro;</dd>
+      <dt class="col-4 text-right">Υπόλοιπο:</dt>
+      <dd class="col-8 text-monospace text-right">15,00&euro;</dd>
+    </dl>
+  </div>
+  <div class="list-group-item">
+    <a href="order-payment.html" class="btn btn-block btn-lg btn-success">
+      <span class="fa fa-credit-card"></span> Νέα Πληρωμή
     </a>
   </div>
   <div class="list-group-item">
-    <div>Σύνολο</div>
-    <h4 class="ml-auto">{{bill.total}}&euro;</h4>
+    <a href="tables.html" class="m-1 btn btn-lg btn-success btn-block">
+      <span class="fa fa-check-circle"></span> Κλείσιμο Τραπεζιού</a>
   </div>
-  <div class="list-group-item">
-    <div>Κεράσματα</div>
-    <h4 class="ml-auto">{{bill.treat}}&euro;</h4>
-  </div>
-  <div class="list-group-item">
-    <div>Πουρμπουάρ</div>
-    <h4 class="ml-auto">{{bill.tip}}&euro;</h4>
-  </div>
-  <div class="list-group-item">
-    <div>Εισπράξεις</div>
-    <h4 class="ml-auto">{{bill.receivedFinal}}&euro;</h4>
-  </div>
-  <div class="list-group-item">
-    <div>Υπόλοιπο</div>
-    <h4 class="ml-auto">
-      <span class="fa fa-check-circle text-success"></span> 0,00&euro;</h4>
-  </div>
-  <a href="tables.html" class="list-group-item bg-success text-white">
-    <span class="icon fi-restaurant flaticon-invoice"></span>
-    <div>
-      <h4>Ολοκλήρωση</h4>
-    </div>
-  </a>
 </div>
 {{>_end}}

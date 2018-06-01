@@ -1,100 +1,536 @@
 {
   "menu": [{
-    "name": "Σαλάτες",
-    "icon": "fi-restaurant flaticon-carrot",
-    "color": "#8BC34A",
+    "name": "Καφέδες",
+    "icon": "fi-restaurant flaticon-coffee-cup",
+    "color": "#795548",
     "items": [{
-      "label": "Χωριάτικη",
-      "description": "Ελληνική παραδοσιακή σαλάτσ",
-      "price": "6,50",
-      "hasAmount": true,
-      "amount": 1,
-      "materials": []
+      "name": "Espresso",
+      "price": 1.30,
+      "description": "Vittorio 100% arabica"
     }, {
-      "label": "Αγγουροντομάτα",
-      "description": "Ελληνική παραδοσιακή σαλάτα",
-      "price": "5,50",
-      "materials": []
+      "name": "Espresso macchiato",
+      "price": 1.30,
+      "description": "Vittorio 100% arabica"
     }, {
-      "label": "Λάχανο - καρότο",
-      "description": "Ελληνική παραδοσιακή σαλάτα",
-      "price": "6,50",
-      "materials": []
+      "name": "Freddo espresso",
+      "price": 1.30,
+      "description": "Vittorio 100% arabica"
     }, {
-      "label": "Μαρούλι - ρόκα",
-      "description": "Ελληνική παραδοσιακή σαλάτα",
-      "price": "6,50",
-      "materials": []
+      "name": "Cappuccino",
+      "price": 1.40,
+      "description": "Vittorio 100% arabica"
+    }, {
+      "name": "Cappuccino latte",
+      "price": 1.70,
+      "description": "Vittorio 100% arabica"
+    }, {
+      "name": "Freddo cappuccino",
+      "price": 1.30,
+      "description": "Vittorio 100% arabica"
+    }, {
+      "name": "Freddo cappuccino latte",
+      "price": 1.70,
+      "description": "Vittorio 100% arabica"
+    }, {
+      "name": "Freddo cappuccino Aroma",
+      "price": 1.70,
+      "description": "Με κρέμα γάλακτος"
+    }, {
+      "name": "Nes",
+      "price": 1.30,
+      "description": ""
+    }, {
+      "name": "Frappe",
+      "price": 1.30,
+      "description": ""
+    }, {
+      "name": "Φίλτρου",
+      "price": 1.30,
+      "description": ""
+    }, {
+      "name": "Irish coffee",
+      "price": 3.00,
+      "description": ""
+    }, {
+      "name": "Ελληνικός",
+      "price": 1.30,
+      "description": ""
+
     }]
   }, {
-    "name": "Ορεκτικά",
-    "icon": "fi-restaurant flaticon-brochette",
-    "color": "#FF9800",
+    "name": "Ροφήματα",
+    "icon": "fi-restaurant flaticon-coffee",
+    "color": "#607D8B",
     "items": [{
-      "label": "Χωριάτικο Λουκάνικο",
-      "description": "φρέσκο χωριάτικο λουκάνικο/καπνιστό τυρί",
-      "price": "6,50",
-      "hasAmount": true,
-      "amount": 1,
-      "materials": []
-    }, {
-      "label": "Λαχανικά Σχάρας",
-      "description": "σάλτσα γιαουρτιού/βότανα/ελαιόλαδο",
-      "price": "5,50",
-      "materials": []
-    }, {
-      "label": "Κρασοτύρι",
-      "description": "φύλλο/μέλι/σουσάμι",
-      "price": "6,50",
-      "materials": []
-    }, {
-      "label": "Ραβασάκι",
-      "description": "φέτα πανέ/ σουσάμι/ chutney σταφύλι/ αρτεμισία",
-      "price": "5,50",
-      "materials": []
-    }, {
-      "label": "Κρητική Πίτα",
-      "description": "χόρτα/ξυνομυζήθρα/γιαούρτι",
-      "price": "6,50",
-      "materials": []
-    }, {
-      "label": "Κεφτεδάκια",
-      "description": "100% μοσχαρίσιο κιμά/πιτάκια/ σάλτσα γιαουρτιού/πατάτες τηγανιτές",
-      "price": "5,50",
-      "materials": []
-    }]
+        "name": "Σοκολάτα",
+        "price": 1.60,
+        "description": ""
+      },
+      {
+        "name": "Σοκολάτα λευκή",
+        "price": 1.60,
+        "description": ""
+      },
+      {
+        "name": "Mochaccino",
+        "price": 2.00,
+        "description": ""
+      },
+      {
+        "name": "Freddoccino",
+        "price": 2.00,
+        "description": ""
+      },
+      {
+        "name": "Φυσικός χυμός πορτοκάλι",
+        "price": 1.60,
+        "description": "300ml"
+      },
+      {
+        "name": "Φυσικός χυμός μπανάνα",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Φυσικός χυμός ανάμεικτος",
+        "price": 2.50,
+        "description": "300ml. Με αχλάδι, μπανάνα & μήλο"
+      },
+      {
+        "name": "Τσάι",
+        "price": 1.20,
+        "description": "Ζεστό"
+      },
+      {
+        "name": "Χαμομήλι",
+        "price": 1.20,
+        "description": "Ζεστό"
+      }
+    ]
   }, {
-    "name": "Κυρίως Πιάτο",
+    "name": "Γρανίτες",
+    "icon": "fi-restaurant flaticon-cupcake",
+    "color": "#E91E63",
+    "items": [{
+        "name": "Γρανίτα φράουλα",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Γρανίτα καρπούζι",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Γρανίτα λεμόνι",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Γρανίτα ρόδι",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Γρανίτα βατόμουρο",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Γρανίτα Coca-Cola",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Γρανίτα τσιχλόφουσκα",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Γρανίτα Red Bull",
+        "price": 2.00,
+        "description": "300ml"
+      }
+    ]
+  }, {
+    "name": "Milkshakes",
     "icon": "fi-restaurant flaticon-steak",
     "color": "#795548",
     "items": [{
-      "label": "Ριζότο",
-      "description": "φρέσκα μανιτάρια/λάδι τρούφας/κρέμα/παρμεζάνα",
-      "price": "10,00"
-    }, {
-      "label": "Πέννες Gluten Free",
-      "description": "λαχανικά/ σάλτσα ντομάτας/ βασιλικός",
-      "price": "10,00"
-    }, {
-      "label": "Κριθαρότο",
-      "description": "“risotto” γαρίδες / καρότο/ κολοκύθι / σάλτσα αστακού",
-      "price": "10,00"
-    }, {
-      "label": "Αστακομακαρονάδα",
-      "description": "αστακός/λιγκουίνι/σάλτσα αστακού/σάλτσα ντομάτας/λαχανικά",
-      "price": "10,00"
-    }, {
-      "label": "Σολομός Φιλέτο",
-      "description": "ρύζι μπασμάτι/λαχανικά/bisque βανίλιας",
-      "price": "10,00"
-    }, {
-      "label": "Μυλοκόπι Φιλέτο",
-      "description": "λεμονοθύμαρο/λαχανικά/ σταμναγκάθι",
-      "price": "10,00"
-    }, {
-      "label": "Φιλέτο Μοσχάρι",
-      "description": "πατάτες/ λαχανικά / σάλτσα πιπεράτη",
-      "price": "10,00"
-    }]
+        "name": "Milkshake βανίλια",
+        "price": 3.00,
+        "description": ""
+      },
+      {
+        "name": "Milkshake σοκολάτα",
+        "price": 3.00,
+        "description": ""
+      },
+      {
+        "name": "Milkshake φράουλα",
+        "price": 3.00,
+        "description": ""
+      },
+      {
+        "name": "Milkshake μπανάνα",
+        "price": 3.00,
+        "description": ""
+      },
+      {
+        "name": "Milkshake ανάμεικτο",
+        "price": 3.00,
+        "description": ""
+      }
+    ]
+  }, {
+    "name": "Smoothies",
+    "icon": "fi-restaurant flaticon-ice-cream",
+    "color": "#00BCD4",
+    "items": [{
+        "name": "Smoothie φράουλα",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Smoothie mango",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Smoothie μπανάνα",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Smoothie ροδάκινο",
+        "price": 2.00,
+        "description": "300ml"
+      },
+      {
+        "name": "Smoothie βατόμουρο",
+        "price": 2.00,
+        "description": "300ml"
+      }
+    ]
+  }, {
+    "name": "Μπαγκέτες",
+    "icon": "fi-restaurant flaticon-croissant",
+    "color": "#FFC107",
+    "items": [{
+        "name": "Μπαγκέτα ζαμπόν",
+        "price": 2.40,
+        "description": "Με ζαμπόν, gouda, ντομάτα & μαγιονέζα"
+      },
+      {
+        "name": "Μπαγκέτα γαλοπούλα",
+        "price": 2.40,
+        "description": "Με γαλοπούλα, gouda, ντομάτα & μαγιονέζα"
+      },
+      {
+        "name": "Μπαγκέτα αλλαντικών",
+        "price": 3.20,
+        "description": "Με σαλάμι αέρος, πάριζα, gouda & μαγιονέζα"
+      },
+      {
+        "name": "Μπαγκέτα τόνος",
+        "price": 3.50,
+        "description": "Με τόνο, αγγούρι, μαρούλι, κάππαρη & μαγιονέζα"
+      },
+      {
+        "name": "Μπαγκέτα μεσογειακή",
+        "price": 3.00,
+        "description": "Με φέτα, ελιές, ντομάτα, αγγούρι, πιπεριά, ελαιόλαδο & ρίγανη"
+      }
+    ]
+  }, {
+    "name": "Αραβικές πίτες",
+    "icon": "fi-restaurant flaticon-brochette",
+    "color": "#FF5722",
+    "items": [{
+        "name": "Αραβική πίτα γαλοπούλα",
+        "price": 2.70,
+        "description": "Με γαλοπούλα, gouda, ντομάτα, μαρούλι & μαγιονέζα"
+      },
+      {
+        "name": "Αραβική πίτα φιλέτο κοτόπουλο",
+        "price": 2.20,
+        "description": "Με φιλέτο κοτόπουλο, μαρούλι & μαγιονέζα"
+      },
+      {
+        "name": "Αραβική πίτα μπιφτέκι",
+        "price": 2.90,
+        "description": "Με μπιφτέκι, gouda, μαρούλι, πατάτες & μαγιονέζα"
+      }
+    ]
+  }, {
+    "name": "Club sandwich",
+    "icon": "fi-restaurant flaticon-toast",
+    "color": "#009688",
+    "items": [{
+        "name": "Club sandwich κλασικό",
+        "price": 4.40,
+        "description": "Με ζαμπόν, μπέικον, gouda, ντομάτα, μαρούλι & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές"
+      },
+      {
+        "name": "Club sandwich τυρί κρέμα",
+        "price": 4.40,
+        "description": "Με γαλοπούλα, ντομάτα, μαρούλι & Philadelphia. Συνοδεύεται από πατάτες τηγανητές"
+      },
+      {
+        "name": "Club sandwich κοτομπουκιές",
+        "price": 5.40,
+        "description": "Με κοτομπουκιές, gouda, ζαμπόν, μπέικον, ντομάτα, μαρούλι, μαγιονέζα & Philadelphia. Συνοδεύεται από πατάτες…"
+      },
+      {
+        "name": "Club sandwich φιλέτο κοτόπουλο",
+        "price": 5.40,
+        "description": "Με φιλέτο κοτόπουλο, gouda, γαλοπούλα, μαρούλι, ντομάτα & Philadelphia. Συνοδεύεται από πατάτες τηγανητές"
+      },
+      {
+        "name": "Club sandwich μπιφτέκι",
+        "price": 5.40,
+        "description": "Με μπιφτέκι μοσχαρίσιο, gouda, μπέικον, μαρούλι, ντομάτα & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές"
+      }
+    ]
+  }, {
+    "name": "Burgers",
+    "icon": "fi-restaurant flaticon-hamburger",
+    "color": "#673AB7",
+    "items": [{
+        "name": "Classic burger",
+        "price": 2.50,
+        "description": "Με μπιφτέκι μοσχαρίσιο, gouda, μαρούλι, ketchup & μουστάρδα"
+      },
+      {
+        "name": "Bacon burger",
+        "price": 3.00,
+        "description": "Με μπιφτέκι μοσχαρίσιο, μπέικον, gouda, ντομάτα, μαρούλι, ketchup & μουστάρδα"
+      },
+      {
+        "name": "Chicken burger",
+        "price": 3.00,
+        "description": "Με κοτόπουλο, gouda, ντομάτα, μαρούλι & μαγιονέζα"
+      },
+      {
+        "name": "BBQ burger",
+        "price": 3.00,
+        "description": "Με μπιφτέκι μοσχαρίσιο, gouda, μπέικον, ντομάτα, κρεμμύδι & BBQ σως"
+      },
+      {
+        "name": "Double burger",
+        "price": 5.00,
+        "description": "Με διπλό μπιφτέκι μοσχαρίσιο, διπλό gouda, μπέικον, μαρούλι, ντομάτα & BBQ σως"
+      },
+      {
+        "name": "Philadelphia burger",
+        "price": 3.50,
+        "description": "Με μπιφτέκι μοσχαρίσιο, μαρούλι, ντομάτα & Philadelphia"
+      }
+    ]
+  }, {
+    "name": "Snacks",
+    "icon": "fi-restaurant flaticon-fast-food",
+    "color": "#CDDC39",
+    "items": [{
+        "name": "Πατάτες τηγανητές",
+        "price": 1.80,
+        "description": ""
+      },
+      {
+        "name": "Πατάτες τηγανητές με σως",
+        "price": 2.00,
+        "description": ""
+      },
+      {
+        "name": "Πατάτες τηγανητές με gouda & μπέικον",
+        "price": 2.50,
+        "description": ""
+      },
+      {
+        "name": "Κοτομπουκιές μερίδα",
+        "price": 4.50,
+        "description": "6 - 8 Τεμάχια.Συνοδεύεται από πατάτες τηγανητές & σως "
+      }
+    ]
+  }, {
+    "name": "Σαλάτες",
+    "icon": "fi-restaurant flaticon-carrot",
+    "color": "#4CAF50",
+    "items": [{
+        "name": "Σεφ",
+        "price": 4.50,
+        "description": "Σαλάτα με μαρούλι, αυγό βραστό, αγγούρι, ντομάτα, ζαμπόν, gouda & μαγιονέζα"
+      },
+      {
+        "name": "Καίσαρα",
+        "price": 4.50,
+        "description": "Σαλάτα με μαρούλι, κοτόπουλο, gouda, κρουτόν, καλαμπόκι, αγγούρι & σως"
+      },
+      {
+        "name": "Τόνος",
+        "price": 4.50,
+        "description": "Σαλάτα με μαρούλι, τόνο, αγγούρι, ντομάτα & μαγιονέζα"
+      },
+      {
+        "name": "Χωριάτικη",
+        "price": 4.50,
+        "description": "Σαλάτα με ντομάτα, αγγούρι, πιπεριά, ελιές, φέτα, κρεμμύδι, κάππαρη, ρίγανη & ελαιόλαδο"
+      }
+    ]
+  }, {
+    "name": "Γλυκά",
+    "icon": "fi-restaurant flaticon-cupcake",
+    "color": "#f44336",
+    "items": [{
+        "name": "Λουκουμάς",
+        "price": 1.20,
+        "description": ""
+      },
+      {
+        "name": "Donut",
+        "price": 1.10,
+        "description": ""
+      },
+      {
+        "name": "Τσουρέκι μαστίχα",
+        "price": 1.10,
+        "description": ""
+      },
+      {
+        "name": "Τσουρέκι γεμιστό με πραλίνα",
+        "price": 1.10,
+        "description": ""
+      },
+      {
+        "name": "Κέικ πορτοκάλι",
+        "price": 1.10,
+        "description": ""
+      },
+      {
+        "name": "Κέικ ανάμεικτο",
+        "price": 1.10,
+        "description": "Βανίλια & σοκολάτα"
+      },
+      {
+        "name": "Μηλόπιτα",
+        "price": 1.10,
+        "description": ""
+      },
+      {
+        "name": "Λεμονόπιτα",
+        "price": 1.10,
+        "description": ""
+      },
+      {
+        "name": "Κρουασάν απλό",
+        "price": 1.10,
+        "description": ""
+      },
+      {
+        "name": "Κρουασάν σοκολάτα",
+        "price": 1.10,
+        "description": ""
+      }
+    ]
+  }, {
+    "name": "Αναψυκτικά",
+    "icon": "fi-restaurant flaticon-wine",
+    "color": "#9C27B0",
+    "items": [{
+        "name": "Coca-Cola 330ml",
+        "price": 1.00,
+        "description": ""
+      },
+      {
+        "name": "Coca-Cola light 330ml",
+        "price": 1.00,
+        "description": ""
+      },
+      {
+        "name": "Coca-Cola zero 330ml",
+        "price": 1.00,
+        "description": ""
+      },
+      {
+        "name": "Fanta κόκκινη 330ml",
+        "price": 1.00,
+        "description": ""
+      },
+      {
+        "name": "Fanta λεμόνι 330ml",
+        "price": 1.00,
+        "description": ""
+      },
+      {
+        "name": "Sprite 330ml",
+        "price": 1.00,
+        "description": ""
+      },
+      {
+        "name": "Amita βύσσινο 250ml",
+        "price": 1.20,
+        "description": ""
+      },
+      {
+        "name": "Amita πορτοκάλι 250ml",
+        "price": 1.20,
+        "description": ""
+      },
+      {
+        "name": "Amita motion 330ml",
+        "price": 1.50,
+        "description": ""
+      },
+      {
+        "name": "Red Bull 250ml",
+        "price": 2.00,
+        "description": ""
+      },
+      {
+        "name": "Hell 250ml",
+        "price": 1.10,
+        "description": ""
+      },
+      {
+        "name": "Hell 500ml",
+        "price": 1.80,
+        "description": ""
+      },
+      {
+        "name": "Νερό 500ml",
+        "price": 0.50,
+        "description": ""
+      },
+      {
+        "name": "Νερό 1.5lt",
+        "price": 1.00,
+        "description": ""
+      }
+    ]
+  }, {
+    "name": "Μπύρες | Ποτά",
+    "icon": "fi-restaurant flaticon-beer",
+    "color": "#9E9E9E",
+    "items": [{
+        "name": "Amstel 330ml",
+        "price": 1.70,
+        "description": ""
+      },
+      {
+        "name": "Heineken 330ml",
+        "price": 1.80,
+        "description": ""
+      },
+      {
+        "name": "Fix 330ml",
+        "price": 1.70,
+        "description": ""
+      },
+      {
+        "name": "Kaiser 330ml",
+        "price": 1.80,
+        "description": ""
+      }
+    ]
   }]
 }

@@ -5,29 +5,27 @@
   </a>
   <div class="header">
     <h4>Τραπέζια</h4>
-    <h5>Λίστα</h5>
+    <h5>Κουτιά</h5>
   </div>
-  <a href="tables2.html" class="ml-auto mr-2 btn btn-lg btn-link text-light">
-    <span class="fa fa-table"></span>
+  <a href="tables.html" class="ml-auto mr-2 btn btn-lg btn-link text-light">
+    <span class="fa fa-list"></span>
   </a>
 </nav>
+
 <div class="list-menu mb-0">
   {{#each tables}}
   <div class="sticky-top list-group-item text-white" style="background: {{color}}">
     <span class="icon text-white {{icon}}"></span>
     <h4>{{section}}</h4>
   </div>
-  {{#each items}}
-  <a href="table.html" class="list-group-item">
-    <div>
+  <div class="list-group-wrap">
+    {{#each items}}
+    <a href="table.html" class="list-group-item">
       <h4>{{name}}</h4>
-      <ul class="description list-inline m-0">
-        {{#each tags}}
-        <li class="list-inline-item">{{this}}</li>{{/each}}
-      </ul>
-    </div>
-    <div class="status" style="background:{{color}};">{{status}}</div>
-  </a>
-  {{/each}} {{/each}}
+      <div class="status" style="background:{{color}};">{{status}}</div>
+    </a>
+    {{/each}}
+  </div>
+  {{/each}}
 </div>
 {{>_end}}

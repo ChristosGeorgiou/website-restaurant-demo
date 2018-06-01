@@ -8,43 +8,66 @@
     <h5>Πληρωμή</h5>
   </div>
 </nav>
-<form class="p-4">
-  <div class="form-group">
-    <label style="font-size: 1.2rem;font-weight: 300;">Υπόλοιπο</label>
-    <div class="input-group input-group-lg">
-      <input readonly class="form-control text-right" value="15,00">
-      <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon1">&euro;</span>
-      </div>
+
+<div class="list-menu mb-0">
+  {{#each items}}
+  <div class="list-group-item {{#if isPaid}}disabled{{/if}}">
+    <div>
+      <span>{{label}} - </span>
+      <strong class="text-monospace">{{price}}&euro;</strong>
     </div>
+    {{#if isPaid}}
+    <div class="badge badge-dark py-2 px-4 ml-auto">ΠΛΗΡΩΘΗΚΕ</div>
+    {{else}}
+    <button class="btn btn-link text-dark p-0 ml-auto">
+      <span class="fa {{#if isSelected}}fa-check-square-o{{else}}fa-square-o{{/if}} fa-2x"></span>
+    </button>
+    {{/if}}
   </div>
-  <div class="form-group">
-    <label style="font-size: 1.2rem;font-weight: 300;">Τύπος</label>
-    <select class="form-control form-control-lg">
-      <option selected>Μετρητά</option>
-      <option value="1">Κάρτα</option>
-    </select>
+  {{/each}}
+  <div class="list-group-item">
+    <dl class="row w-75 mx-auto mb-0">
+      <dt class="col-4 text-right">Σύνολο:</dt>
+      <dd class="col-8 text-monospace text-right">28,00&euro;</dd>
+      <dt class="col-4 text-right">Πληρωμένο:</dt>
+      <dd class="col-8 text-monospace text-right">7,00&euro;</dd>
+      <dt class="col-4 text-right">Πουρμπουάρ:</dt>
+      <dd class="col-8 text-monospace text-right">3,00&euro;</dd>
+      <dt class="col-4 text-right">Υπόλοιπο:</dt>
+      <dd class="col-8 text-monospace text-right">15,00&euro;</dd>
+      <dt class="col-4 text-right">Επιλεγμένα:</dt>
+      <dd class="col-8 text-monospace text-right">9,00&euro;</dd>
+    </dl>
   </div>
-  <div class="form-group">
-    <label style="font-size: 1.2rem;font-weight: 300;">Πληρωμή</label>
-    <div class="input-group input-group-lg">
-      <input class="form-control text-right" value="20,00">
-      <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon1">&euro;</span>
+  <div class="list-group-item">
+    <form class="w-100">
+      <div class="form-group">
+        <label class="d-flex" style="font-size: 1.2rem;font-weight: 300;">Πληρωμή
+          <span class="form-text text-muted ml-auto">Ρέστα:
+            <strong>1,00&euro;</strong>
+          </span>
+        </label>
+        <div class="row">
+          <div class="col-6">
+            <select class="form-control form-control-lg">
+              <option selected>Μετρητά</option>
+              <option value="1">Κάρτα</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <div class="input-group input-group-lg">
+              <input class="form-control text-right" value="10,00">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon1">&euro;</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <label style="font-size: 1.2rem;font-weight: 300;">Ρέστα</label>
-    <div class="input-group input-group-lg">
-      <input readonly class="form-control text-right" value="20,00">
-      <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon1">&euro;</span>
+      <div class="form-group">
+        <a href="table.html" class="m-1 btn btn-lg btn-success btn-block">
+          <span class="fa fa-credit-card"></span> Πληρωμή</a>
       </div>
-    </div>
+    </form>
   </div>
-  <div class="bg-white border-top fixed-bottom p-1 d-flex">
-    <a href="table.html" class="m-1 btn btn-lg btn-success btn-block">
-      <span class="fa fa-credit-card"></span> Πληρωμή</a>
-  </div>
-</form>
+</div>
