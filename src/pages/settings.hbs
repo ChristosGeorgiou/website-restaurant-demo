@@ -6,14 +6,27 @@
   <h4>Ρυθμισεις</h4>
 </nav>
 <div class="list-menu">
-  {{#each reservations}}
-  <a href="table.html" class="list-group-item">
+  <div class="list-group-item text-white bg-dark">
+    <span class="fa fa-creative-commons fa-4x mr-2"></span>
+    <h4>Attributions</h4>
+  </div>
+  <div class="list-group-item">
     <div>
-      <h4>{{name}}</h4>
-      <div class="description">{{date}}</div>
+      <h4>Icons: Restaurant Elements</h4>
+      <div class="description">
+        by
+        <a href="https://www.freepik.com/">freepik</a>
+      </div>
     </div>
-    <span class="status bg-dark">{{table}}</span>
-  </a>
-  {{/each}}
+  </div>
+  <div class="list-group-item">
+    <div>
+      <h4>Icons: Summer</h4>
+      <div class="description">
+        by
+        <a href="https://www.freepik.com/">freepik</a>
+      </div>
+    </div>
+  </div>
 </div>
 {{>_end}}
