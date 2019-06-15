@@ -7,8 +7,8 @@
     "description": "Menu / Παραγγελίες"
   }, {
     "link": "accommodations/index.html",
-    "color": "#E91E63",
-    "icon": "fi-restaurant flaticon-reserved",
+    "color": "#343a40",
+    "icon": "fimanager flaticon-004-bed",
     "label": "Kαταλύματα",
     "description": "Κρατήσεις / Επισκέπτες"
   }]

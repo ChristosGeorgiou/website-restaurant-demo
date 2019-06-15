@@ -1,0 +1,22 @@
+{{>_start themeColor="#E91E63"}}
+<nav class="header-bar" style="background: #E91E63!important">
+  <a href="/restaurants/index.html" class="btn btn-link btn-sm mr-2 text-white">
+    <span class="fa fa-chevron-left"></span>
+  </a>
+  <div class="header">
+    <h4>Κρατήσεις</h4>
+    <h5>Αγαπητοί πελάτες!</h5>
+  </div>
+</nav>
+<div class="list-menu">
+  {{#each reservations}}
+  <a href="/restaurants/reservation.html" class="list-group-item">
+    <div>
+      <h4>{{name}}</h4>
+      <div class="description">{{date}}</div>
+    </div>
+    <span class="status bg-dark">{{table}}</span>
+  </a>
+  {{/each}}
+</div>
+{{>_end}}

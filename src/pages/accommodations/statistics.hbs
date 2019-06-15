@@ -1,0 +1,105 @@
+{{>_start themeColor="#4CAF50"}}
+<nav class="header-bar" style="background: #4CAF50!important">
+  <a href="/restaurants/index.html" class="btn btn-link btn-sm mr-2 text-white">
+    <span class="fa fa-chevron-left"></span>
+  </a>
+  <div class="header">
+    <h4>Στατιστικά</h4>
+    <h5>Αναλύσεις / Γραφήματα</h5>
+  </div>
+</nav>
+<div class="p-2">
+  <canvas id="canvas"></canvas>
+</div>
+<div class="list-menu">
+  <div class="list-group-item">
+    <h4>Δευτέρα</h4>
+    <div class="status bg-dark">15</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Τρίτη</h4>
+    <div class="status bg-dark">25</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Τετάρτη</h4>
+    <div class="status bg-dark">7</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Πέμπτη</h4>
+    <div class="status bg-dark">30</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Παρασκευή</h4>
+    <div class="status bg-dark">15</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Σάββατο</h4>
+    <div class="status bg-dark">80</div>
+  </div>
+  <div class="list-group-item">
+    <h4>Κυριακή</h4>
+    <div class="status bg-dark">70</div>
+  </div>
+</div>
+
+<script src="/js/Chart.bundle.js"></script>
+<script>
+  var config = {
+    type: 'line',
+    data: {
+      labels: ['Δ', 'Τ', 'Τ', 'Π', 'Π', 'Σ', 'Κ'],
+      datasets: [{
+        label: 'Παραγγελίες',
+        backgroundColor: "#111111",
+        borderColor: "#4CAF50",
+        data: [
+          15,
+          25,
+          7,
+          30,
+          15,
+          80,
+          70
+        ],
+        fill: false,
+      }]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: false,
+        text: 'Chart.js Line Chart'
+      },
+      tooltips: {
+        mode: 'index',
+        intersect: false,
+      },
+      hover: {
+        mode: 'nearest',
+        intersect: true
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: 'Month'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: 'Value'
+          }
+        }]
+      }
+    }
+  };
+
+  window.onload = function () {
+    var ctx = document.getElementById('canvas').getContext('2d');
+    window.myLine = new Chart(ctx, config);
+  };
+
+</script> {{>_end}}
