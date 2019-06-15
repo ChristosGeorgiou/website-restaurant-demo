@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fimanager:before {
+    display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-001-evaluation:before { content: "\f100"; }
+.flaticon-002-jacuzzi:before { content: "\f101"; }
+.flaticon-003-sunbed:before { content: "\f102"; }
+.flaticon-004-bed:before { content: "\f103"; }
+.flaticon-005-handbell:before { content: "\f104"; }
+.flaticon-006-cocktail:before { content: "\f105"; }
+.flaticon-007-pancakes:before { content: "\f106"; }
+.flaticon-008-calendar:before { content: "\f107"; }
+.flaticon-009-cctv:before { content: "\f108"; }
+.flaticon-010-condom:before { content: "\f109"; }
+.flaticon-011-credit-card:before { content: "\f10a"; }
+.flaticon-012-do-not-disturb:before { content: "\f10b"; }
+.flaticon-013-fire-extinguisher:before { content: "\f10c"; }
+.flaticon-014-hair-dryer:before { content: "\f10d"; }
+.flaticon-015-dress:before { content: "\f10e"; }
+.flaticon-016-hotel:before { content: "\f10f"; }
+.flaticon-017-lamp:before { content: "\f110"; }
+.flaticon-018-soap:before { content: "\f111"; }
+.flaticon-019-location:before { content: "\f112"; }
+.flaticon-020-luggage:before { content: "\f113"; }
+.flaticon-021-landline:before { content: "\f114"; }
+.flaticon-022-bathrobe:before { content: "\f115"; }
+.flaticon-023-hotel-key:before { content: "\f116"; }
+.flaticon-024-room-service:before { content: "\f117"; }
+.flaticon-025-sofa:before { content: "\f118"; }
+.flaticon-026-swimsuit:before { content: "\f119"; }
+.flaticon-027-toothbrush:before { content: "\f11a"; }
+.flaticon-028-towels:before { content: "\f11b"; }
+.flaticon-029-smartphone:before { content: "\f11c"; }
+.flaticon-030-wine-bottle:before { content: "\f11d"; }
+
+$font-Flaticon-001-evaluation: "\f100";
+$font-Flaticon-002-jacuzzi: "\f101";
+$font-Flaticon-003-sunbed: "\f102";
+$font-Flaticon-004-bed: "\f103";
+$font-Flaticon-005-handbell: "\f104";
+$font-Flaticon-006-cocktail: "\f105";
+$font-Flaticon-007-pancakes: "\f106";
+$font-Flaticon-008-calendar: "\f107";
+$font-Flaticon-009-cctv: "\f108";
+$font-Flaticon-010-condom: "\f109";
+$font-Flaticon-011-credit-card: "\f10a";
+$font-Flaticon-012-do-not-disturb: "\f10b";
+$font-Flaticon-013-fire-extinguisher: "\f10c";
+$font-Flaticon-014-hair-dryer: "\f10d";
+$font-Flaticon-015-dress: "\f10e";
+$font-Flaticon-016-hotel: "\f10f";
+$font-Flaticon-017-lamp: "\f110";
+$font-Flaticon-018-soap: "\f111";
+$font-Flaticon-019-location: "\f112";
+$font-Flaticon-020-luggage: "\f113";
+$font-Flaticon-021-landline: "\f114";
+$font-Flaticon-022-bathrobe: "\f115";
+$font-Flaticon-023-hotel-key: "\f116";
+$font-Flaticon-024-room-service: "\f117";
+$font-Flaticon-025-sofa: "\f118";
+$font-Flaticon-026-swimsuit: "\f119";
+$font-Flaticon-027-toothbrush: "\f11a";
+$font-Flaticon-028-towels: "\f11b";
+$font-Flaticon-029-smartphone: "\f11c";
+$font-Flaticon-030-wine-bottle: "\f11d";

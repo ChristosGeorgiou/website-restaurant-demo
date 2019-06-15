@@ -1,141 +1,141 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 .glyph {
-    display: inline-block;
-    margin: 0 0.8em 0 0;
-    text-align: center;
-    width: 50px;
-    .glyph-icon {
-        line-height: 1;
-        &:before {
-            font-size: 50px;
-            margin-left: 0;
-        }
+  display: inline-block;
+  margin: 0 0.8em 0 0;
+  text-align: center;
+  width: 50px;
+  .glyph-icon {
+    line-height: 1;
+    &:before {
+      font-size: 50px;
+      margin-left: 0;
     }
+  }
 }
 
 .header-bar {
-    @extend .bg-dark;
-    @extend .sticky-top;
-    @extend .p-2;
-    @extend .d-flex;
-    @extend .text-white;
-    @extend .align-items-center;
-    .icon {
-        margin: 1rem auto 0;
-        width: 70px;
-        height: 70px;
-        display: block;
-        &:before {
-            font-size: 70px;
-            margin: 0;
-            line-height: 70px;
-        }
+  @extend .bg-dark;
+  @extend .sticky-top;
+  @extend .p-2;
+  @extend .d-flex;
+  @extend .text-white;
+  @extend .align-items-center;
+  .icon {
+    margin: 1rem auto 0;
+    width: 70px;
+    height: 70px;
+    display: block;
+    &:before {
+      font-size: 70px;
+      margin: 0;
+      line-height: 70px;
     }
-    h2 {
-        @extend .m-0;
-        font-weight: 300;
+  }
+  h2 {
+    @extend .m-0;
+    font-weight: 300;
+  }
+  .header {
+    @extend .mb-1;
+    h4 {
+      @extend .text-white;
+      @extend .m-0;
+      font-weight: 300;
     }
-    .header {
-        @extend .mb-1;
-        h4 {
-            @extend .text-white;
-            @extend .m-0;
-            font-weight: 300;
-        }
-        h5 {
-            @extend .text-white;
-            font-weight: 300;
-            opacity: .7;
-            font-size: 1rem;
-            margin: 0 0 0 .1rem;
-        }
+    h5 {
+      @extend .text-white;
+      font-weight: 300;
+      opacity: 0.7;
+      font-size: 1rem;
+      margin: 0 0 0 0.1rem;
     }
-    small {
-        font-weight: 300;
-    }
+  }
+  small {
+    font-weight: 300;
+  }
 }
 
 .list-menu {
-    @extend .list-group;
-    @extend .list-group-flush;
-    margin-bottom: 65px;
+  @extend .list-group;
+  @extend .list-group-flush;
+  margin-bottom: 65px;
+  .list-group-item {
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .list-group-item-action;
+    .status {
+      @extend .rounded;
+      @extend .text-center;
+      @extend .text-monospace;
+      @extend .text-white;
+      @extend .ml-auto;
+      width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0.3rem 0.5rem;
+    }
+  }
+  .icon {
+    margin: 0 1rem 0 0;
+    width: 52px;
+    height: 52px;
+    &:before {
+      font-size: 52px;
+      margin: 0;
+      line-height: 52px;
+    }
+  }
+  h4 {
+    @extend .mb-0;
+    font-weight: 400;
+  }
+  .description {
+    @extend .text-secondary;
+    font-size: 1rem;
+  }
+  .list-group-wrap {
+    @extend .d-flex;
+    @extend .flex-wrap;
+    @extend .justify-content-center;
+    @extend .p-1;
     .list-group-item {
-        @extend .d-flex;
-        @extend .align-items-center;
-        @extend .list-group-item-action;
-        .status {
-            @extend .rounded;
-            @extend .text-center;
-            @extend .text-monospace;
-            @extend .text-white;
-            @extend .ml-auto;
-            width: 80px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            padding: .3rem .5rem;
-        }
-    }
-    .icon {
-        margin: 0 1rem 0 0;
-        width: 52px;
-        height: 52px;
-        &:before {
-            font-size: 52px;
-            margin: 0;
-            line-height: 52px;
-        }
-    }
-    h4 {
-        @extend .mb-0;
-        font-weight: 400;
-    }
-    .description {
-        @extend .text-secondary;
-        font-size: 1rem;
-    }
-    .list-group-wrap {
-        @extend .d-flex;
-        @extend .flex-wrap;
-        @extend .justify-content-center;
+      @extend .border;
+      @extend .m-1;
+      @extend .p-2;
+      @extend .flex-column;
+      width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      h4 {
+        @extend .mb-2;
+        @extend .text-truncate;
+      }
+      .status {
+        @extend .w-100;
         @extend .p-1;
-        .list-group-item {
-            @extend .border;
-            @extend .m-1;
-            @extend .p-2;
-            @extend .flex-column;
-            width: 150px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            h4 {
-                @extend .mb-2;
-                @extend .text-truncate;
-            }
-            .status {
-                @extend .w-100;
-                @extend .p-1;
-            }
-        }
+      }
     }
+  }
 }
 
 .sidemenu {
-    @extend .bg-dark;
-    @extend .h-100;
-    a {
-        @extend .btn;
-        @extend .btn-link;
-        @extend .btn-block;
-        @extend .text-white;
-        @extend .m-0;
-        @extend .p-0;
-        border-radius: 0;
-        border: none;
-        line-height: 60px;
-        span {
-            &:before {
-                font-size: 25px;
-                margin-left: 0;
-            }
-        }
+  @extend .bg-dark;
+  @extend .h-100;
+  a {
+    @extend .btn;
+    @extend .btn-link;
+    @extend .btn-block;
+    @extend .text-white;
+    @extend .m-0;
+    @extend .p-0;
+    border-radius: 0;
+    border: none;
+    line-height: 60px;
+    span {
+      &:before {
+        font-size: 25px;
+        margin-left: 0;
+      }
     }
+  }
 }

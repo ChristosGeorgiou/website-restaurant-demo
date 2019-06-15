@@ -6,7 +6,7 @@
     "label": "Τραπέζια",
     "description": "Menu / Παραγγελίες",
     "hasInfo": true,
-    "info": "5/28"
+    "infoTxt": "5/28"
   }, {
     "link": "reservations.html",
     "color": "#E91E63",
@@ -14,7 +14,7 @@
     "label": "Κρατήσεις",
     "description": "Αγαπητοί πελάτες!",
     "hasInfo": true,
-    "info": "10"
+    "infoTxt": "10"
   }, {
     "link": "statistics.html",
     "color": "#4CAF50",

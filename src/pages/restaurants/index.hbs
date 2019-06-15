@@ -1,10 +1,15 @@
 {{>_start themeColor="#343a40"}}
-<nav class="header-bar text-center flex-column">
-  <div>
-    <span class="icon fi-restaurant flaticon-cooker"></span>
+<nav class="header-bar">
+  <a href="/index.html" class="btn btn-link btn-sm mr-2 text-white">
+    <span class="fa fa-chevron-left"></span>
+  </a>
+  <div class="flex-grow-1 text-center flex-column">
+    <div>
+      <span class="icon fi-restaurant flaticon-cooker"></span>
+    </div>
+    <h2>Restaurants</h2>
+    <small>a balnc software</small>
   </div>
-  <h2>Restaurants</h2>
-  <small>a balnc software</small>
 </nav>
 
 <div class="list-menu">
@@ -16,7 +21,7 @@
       <div class="description">{{description}}</div>
     </div>
     {{#if hasInfo}}
-    <div class="status" style="background:{{color}}">{{info}}</div>
+    <div class="status" style="background:{{color}}">{{infoTxt}}</div>
     {{/if}}
   </a>
   {{/each}}

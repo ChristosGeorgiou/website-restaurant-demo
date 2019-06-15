@@ -1,12 +1,12 @@
 {
   "menu": [{
-    "link": "restaurants/restaurants.html",
+    "link": "restaurants/index.html",
     "color": "#343a40",
     "icon": "fi-restaurant flaticon-cooker",
     "label": "Εστιατόρια",
     "description": "Menu / Παραγγελίες"
   }, {
-    "link": "accommodations/accommodations.html",
+    "link": "accommodations/index.html",
     "color": "#E91E63",
     "icon": "fi-restaurant flaticon-reserved",
     "label": "Kαταλύματα",
