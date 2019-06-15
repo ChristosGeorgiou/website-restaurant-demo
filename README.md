@@ -1,5 +1,3 @@
-# cgeosoft
+# mobile-templates
 
-This is the repo for my personal website
-
-Find it [here](https://cgeosoft.com/)
+test templates

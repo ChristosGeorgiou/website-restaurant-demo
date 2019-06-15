@@ -1,33 +1,19 @@
 {
   "menu": [{
-    "link": "tables.html",
+    "link": "restaurant.html",
     "color": "#343a40",
-    "icon": "fi-restaurant flaticon-dish",
-    "label": "Τραπέζια",
+    "icon": "fi-restaurant flaticon-cooker",
+    "label": "restaurant",
     "description": "Menu / Παραγγελίες",
     "hasInfo": true,
     "info": "5/28"
   }, {
-    "link": "reservations.html",
+    "link": "accommodations.html",
     "color": "#E91E63",
     "icon": "fi-restaurant flaticon-reserved",
-    "label": "Κρατήσεις",
+    "label": "Kαταλύματα",
     "description": "Αγαπητοί πελάτες!",
     "hasInfo": true,
     "info": "10"
-  }, {
-    "link": "statistics.html",
-    "color": "#4CAF50",
-    "icon": "fi-restaurant flaticon-fruit",
-    "label": "Στατιστικά",
-    "description": "Αναλύσεις / Γραφήματα",
-    "hasInfo": false
-  }, {
-    "link": "settings.html",
-    "color": "#607D8B",
-    "icon": "fi-restaurant flaticon-daily-specials-board",
-    "label": "Ρυθμίσεις",
-    "description": "Αναβάθμιση / Βοήθεια",
-    "hasInfo": false
   }]
 }
