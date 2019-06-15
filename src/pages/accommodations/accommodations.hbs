@@ -1,0 +1,30 @@
+
+{{>_start themeColor="#343a40"}}
+<nav class="header-bar text-center flex-column">
+  <div>
+    <span class="icon fi-restaurant flaticon-cooker"></span>
+  </div>
+  <h2>Kαταλύματα</h2>
+  <small>a balnc software</small>
+</nav>
+
+<div class="list-menu">
+  {{#each menu}}
+  <a href="{{link}}" class="list-group-item">
+    <span class="icon {{icon}}" style="color:{{color}}"></span>
+    <div>
+      <h4>{{label}}</h4>
+      <div class="description">{{description}}</div>
+    </div>
+    {{#if hasInfo}}
+    <div class="status" style="background:{{color}}">{{info}}</div>
+    {{/if}}
+  </a>
+  {{/each}}
+</div>
+<div class="bg-white fixed-bottom p-1 text-secondary text-center border-top">
+  <small>Accommodations v0.0 -
+    <a href="https://cgeosoft.com">cgeosoft.com</a>
+  </small>
+</div>
+{{>_end}}

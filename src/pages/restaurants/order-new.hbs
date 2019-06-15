@@ -1,7 +1,7 @@
 {{>_start themeColor="#343a40"}}
 <div class="d-flex flex-column" style="height: 100%;position: absolute;left: 0;top: 0;width: 100%;">
   <nav class="header-bar">
-    <a href="table.html" class="btn btn-link btn-sm mr-2 text-white">
+    <a href="/restaurants/table.html" class="btn btn-link btn-sm mr-2 text-white">
       <span class="fa fa-chevron-left"></span>
     </a>
     <div class="header">
@@ -12,7 +12,7 @@
   <div class="d-flex h-100">
     <div class="sidemenu" style="width:90px;overflow: scroll;">
       {{#each menu}}
-      <a href="#{{name}}" style="background: {{color}}">
+      <a href="/restaurants/#{{name}}" style="background: {{color}}">
         <span class="icon {{icon}}"></span>
       </a>
       {{/each}}
@@ -40,7 +40,7 @@
     </div>
   </div>
   <div class="bg-white border-top fixed-bottom p-1 d-flex">
-    <a href="order-complete.html" class="w-100 m-1 btn btn-lg btn-success">
+    <a href="/restaurants/order-complete.html" class="w-100 m-1 btn btn-lg btn-success">
       <span class="fa fa-check-circle"></span> Προσθήκη</a>
   </div>
 </div>
