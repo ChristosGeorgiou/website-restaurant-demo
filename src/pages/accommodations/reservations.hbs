@@ -1,22 +1,38 @@
 {{>_start themeColor="#E91E63"}}
 <nav class="header-bar" style="background: #E91E63!important">
-  <a href="/restaurants/index.html" class="btn btn-link btn-sm mr-2 text-white">
+  <a href="/accommodations/index.html" class="btn btn-link btn-sm mr-2 text-white">
     <span class="fa fa-chevron-left"></span>
   </a>
   <div class="header">
     <h4>Κρατήσεις</h4>
-    <h5>Αγαπητοί πελάτες!</h5>
+    <h5>schedule</h5>
   </div>
 </nav>
 <div class="list-menu">
   {{#each reservations}}
-  <a href="/restaurants/reservation.html" class="list-group-item">
-    <div>
-      <h4>{{name}}</h4>
-      <div class="description">{{date}}</div>
-    </div>
-    <span class="status bg-dark">{{table}}</span>
-  </a>
+  
+  <div class="sticky-top list-group-item bg-light">
+    <h4>{{date}}</h4>
+  </div>
+  
+    {{#each items}}
+    <a href="/accommodations/reservation.html" class="list-group-item">
+      <h2 class="text-monospace mr-4">{{checkin}}</h2>
+      <div>
+        <h4>{{name}}</h4>
+        <div class="description">{{room}} - {{payment.upfront}}/{{payment.amount}}</div>
+      </div>
+      {{#if status.pending}}
+      <span class="status bg-warning">PENDING</span>
+      {{/if}}
+      {{#if status.partial}}
+      <span class="status bg-partial">PARTIAL</span>
+      {{/if}}
+      {{#if status.confirmed}}
+      <span class="status bg-success">CONFIRMED</span>
+      {{/if}}
+    </a>
+    {{/each}}
   {{/each}}
 </div>
 {{>_end}}

@@ -55,6 +55,11 @@
   }
 }
 
+.bg-partial {
+  background: rgb(255, 193, 7);
+  background: linear-gradient(90deg, rgba(255, 193, 7, 1) 0%, rgba(40, 167, 69, 1) 100%);
+}
+
 .list-menu {
   @extend .list-group;
   @extend .list-group-flush;

@@ -1,1 +1,144 @@
-{}
+{
+  "reservations": [
+    {
+      "date": "2019-04-15",
+      "items": [
+        {
+          "name": "Carolyn Mcbride",
+          "status": {
+            "pending":true
+          },
+          "payment": {
+            "status": "full",
+            "amount": "0€",
+            "upfront": "100€"
+          },
+          "room": "4κλινο",
+          "checkin": "12:00"
+        },
+        {
+          "name": "Earl Holland",
+          "status": {
+            "partial":true
+          },
+          "payment": {
+            "status": "partial",
+            "amount": "100€",
+            "upfront": "30€"
+          },
+          "room": "4κλινο",
+          "checkin": "12:00"
+        },
+        {
+          "name": "Boyd Garrett",
+          "status": {
+            "confirmed":true
+          },
+          "payment": {
+            "status": "full",
+            "amount": "100€",
+            "upfront": "100€"
+          },
+          "room": "2κλινο",
+          "checkin": "12:00"
+        },
+        {
+          "name": "Wanda Schultz",
+          "status": {
+            "confirmed":true
+          },
+          "payment": {
+            "status": "full",
+            "amount": "100€",
+            "upfront": "100€"
+          },
+          "room": "4κλινο",
+          "checkin": "12:00"
+        },
+        {
+          "name": "Jenna Gordon",
+          "status": {
+            "confirmed":true
+          },
+          "payment": {
+            "status": "full",
+            "amount": "100€",
+            "upfront": "100€"
+          },
+          "room": "2κλινο",
+          "checkin": "12:00"
+        }
+      ]
+    },
+    {
+      "date": "2019-04-16",
+      "items": [
+        {
+          "name": "Lamar Bates",
+          "status": {
+            "confirmed":true
+          },
+          "payment": {
+            "status": "full",
+            "amount": "100€",
+            "upfront": "100€"
+          },
+          "room": "2κλινο",
+          "checkin": "18:00"
+        },
+        {
+          "name": "Yvonne Love",
+          "status": {
+            "confirmed":true
+          },
+          "payment": {
+            "status": "full",
+            "amount": "100€",
+            "upfront": "100€"
+          },
+          "room": "4κλινο",
+          "checkin": "18:00"
+        },
+        {
+          "name": "Dixie Harper",
+          "status": {
+            "confirmed":true
+          },
+          "payment": {
+            "status": "full",
+            "amount": "100€",
+            "upfront": "100€"
+          },
+          "room": "4κλινο",
+          "checkin": "18:00"
+        },
+        {
+          "name": "Dan Frank",
+          "status": {
+            "confirmed":true
+          },
+          "payment": {
+            "status": "full",
+            "amount": "100€",
+            "upfront": "100€"
+          },
+          "room": "2κλινο",
+          "checkin": "18:00"
+        },
+        {
+          "name": "Pedro Craig",
+          "status": {
+            "confirmed":true
+          },
+          "payment": {
+            "status": "full",
+            "amount": "100€",
+            "upfront": "100€"
+          },
+          "room": "2κλινο",
+          "checkin": "18:00"
+        }
+      ]
+    }
+  ]
+}
